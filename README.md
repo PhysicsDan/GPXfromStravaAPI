@@ -1,2 +1,8 @@
 # GPXfromStravaAPI
 Create GPX files from datastreams downloaded using the Strava API
+
+DISCLAIMER: I am a hobbiest so this may not be the 'best' way to do the following but it has worked well for me.
+
+The StravaAPI doesn't allow for direct downloading of GPX files. Therefore individual latitude, longitude and elevation values are downloaded and then converted into a gpx file using the `gpxpy.gpx` module.
+
+Requirements: see requirements.txt
