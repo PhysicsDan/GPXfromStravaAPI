@@ -1,0 +1,6 @@
+{
+"client_id": 12345,
+"client_secret": "q1w2e3r4t5y6u7",
+"code": "read the instructions on how to get code",
+"grant_type": "authorization_code"
+}
