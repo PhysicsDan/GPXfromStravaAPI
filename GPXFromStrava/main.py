@@ -18,7 +18,8 @@ class StravaApiHelper:
 			if args.keys[-1] == '\\' or args.data[-1] == '\\':
 				raise ValueError(
 					'Please use unix style folder separation. i.e. path/to/file')
-			chdir(args.dir)
+			if args.dir != 'n/a':
+				chdir(args.dir)
 			self.keys_folder = args.keys if args.keys[-1] == '/' else args.keys + '/'
 			self.data_folder = args.data if args.data[-1] == '/' else args.data + '/'
 		self.exceed_counter = 0
@@ -30,7 +31,6 @@ class StravaApiHelper:
 				print(f'Made folder: {f}')
 
 	def GetInitialStravaTokens(self):
-		#Source: medium
 		with open(self.keys_folder + 'client_info.json') as f:
 			init_info = json.load(f)
 		response = requests.post(
