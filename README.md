@@ -1,5 +1,6 @@
 # GPXfromStravaAPI
 Create GPX files from datastreams downloaded using the Strava API
+Currently the limitations are the GPX file will only contain latitude, longitude, time and elevation, not HR.
 
 DISCLAIMER: I am a hobbiest so this may not be the 'best' way to do the following but it has worked well for me.
 
