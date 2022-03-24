@@ -37,3 +37,5 @@ python main.py --keys path/to/api/keys --data path/to/data/folder
 
 Limitations:
 There is a limit to the number of API requests a user can make (per 15 mins and per day). This code is set up in such a way that it should stop once that limit has been reached to avoid pointless requests. However, this does mean in can take several days to fully download a users GPX files for the first time.
+
+If you have any issues feel free to open a discussion and I can try and help :)
