@@ -10,12 +10,18 @@ Note: The GPX files produced could be used in this [code by Remi Salmon](https:/
 Currently the limitations are the GPX file will only contain latitude, longitude, time and elevation, not heartrate although that is easy enough to add but was not required by me.
 
 ## Setting up the API
-There is a handy guide [here](https://medium.com/swlh/using-python-to-connect-to-stravas-api-and-analyse-your-activities-dummies-guide-5f49727aac86) that shows you how to set up an Strava so you can make API requests. The main information you need is:
-- User Code (Shown in the API section of Strava settings)
-- Secret Code (Shown in the API section of Strava settings)
-- Authentication Token (see the linked guide on how to get this)
+There is a handy guide [here](https://medium.com/swlh/using-python-to-connect-to-stravas-api-and-analyse-your-activities-dummies-guide-5f49727aac86) that shows you how to set up an Strava so you can make API requests. 
 
-You need to add this info to the `client_info.json file` in the `keys` folder. After that when you run the code for the first time it should generate the relavent tokens etc that are required.
+The main information and actions you require are:
+- In the `keys` directory, please delete the file `strava_tokens.json` if it exists as this will be generated on the initial successful run with the relevant information returned from Strava
+- User Code (numeric, Shown in the API section of Strava settings as `Client ID`)
+- Secret Code (GUID, Shown in the API section of Strava settings as `Client Secret`)
+- Authentication Token (GUID, see the [linked guide](https://medium.com/swlh/using-python-to-connect-to-stravas-api-and-analyse-your-activities-dummies-guide-5f49727aac86) on how to obtain this from the returned URL)
+
+You will need to add this info to the `client_info.json file` in the `keys` folder. After that when you run the code for the first time it should generate the relavent tokens etc that are required.
+
+If the inital requests fails, you need to commence this process from the start.
+
 
 Requirements: see requirements.txt
 
